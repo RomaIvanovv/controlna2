@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui;
+}
+.mainMenu {
+    height: 15vh;
+    background-color: gray;
+}
+.mainMenu, .container, textarea {
+    width: 100%;
+}
+.container, textarea {
+    height: 85vh;
+    padding: 20px 20px;
+}
+.container {
+    color: rgb(44, 44, 44);
+}
+textarea {
+    display: none;
+    font-size: 16px;
+}
+p {
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+.menu2 {
+    display: none;
+}
+.save, .table, .liNumber, .li, .lable, .mainMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[name="buttonTextarea"] {
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+}
+input[name="buttonTextarea"]:hover {
+    background-color: lightgray;
+}
+
+form[name="f2"], form[name="f3"], form[name="f4"] {
+    display: flex;
+}
+#ch1, #ch2, #ch3, #ch4 {
+    display: none;
+}
+.lable {
+    width: 45px;
+    height: 40px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+.Ch1, .Rd1, .fontFamaly, .save {
+    border-start-start-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.Ch2 {
+    font-style: italic;
+}
+.Ch3 {
+    text-decoration: underline;
+}
+.Ch4, .li {
+    border-start-end-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-decoration: line-through;
+}
+#ch1:checked~.Ch1, #ch2:checked~.Ch2, #ch3:checked~.Ch3, #ch4:checked~.Ch4, 
+#rd1:checked~.Rd1, #rd2:checked~.Rd2, #rd3:checked~.Rd3{
+    background-color: lightgray;
+}
+
+input[name="rd"], input[name="fontFamaly"], input[name="fontSize"],
+input[name="colorText"], input[name="backStyle"], input[name="save"],
+input[name="table"], input[name="liNumber"], input[name="li"] {
+    display: none;
+}
+.lable:hover {
+    background-color: lightgray;
+}
+.Rd3, .backStyle {
+    border-start-end-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fontSize, .fontFamaly {
+    display: flex;
+}
+.p {
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.fontFamaly, .fontSize {
+    width: 45px;
+}
+
+.btnLogin {
+    width: 45px;
+    height: 40px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background: url(img/zamokClose.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+}
+.btnLogin:hover {
+    background-color: lightgray;
+}
+
+.blockFontFamaly, .blockFontSize {
+    position: absolute;
+    left: 40%;
+    top: 110%;
+    width: 30%;
+    background-color: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 5px 0 5px 0;
+    font-weight: normal;
+    display: none;
+}
+.arial {
+    font-family: Arial;
+    padding: 5px 20px 5px 20px;
+}
+.arial:hover {
+    background-color: lightgray;
+}
+.georgia {
+    font-family: Georgia;
+    padding: 5px 20px 5px 20px;
+}
+.georgia:hover {
+    background-color: lightgray;
+}
+.impact {
+    font-family: Impact;
+    padding: 5px 20px 5px 20px;
+}
+.impact:hover {
+    background-color: lightgray;
+}
+.tahoma {
+    font-family: Tahoma;
+    padding: 5px 20px 5px 20px;
+}
+.tahoma:hover {
+    background-color: lightgray;
+}
+.roman {
+    font-family: 'Times';
+    padding: 5px 20px 5px 20px;
+}
+.roman:hover {
+    background-color: lightgray;
+}
+.veranda {
+    font-family: Verdana;
+    padding: 5px 20px 5px 20px;
+}
+.veranda:hover {
+    background-color: lightgray;
+}
+
+.blockFontSize {
+    width: 20%;
+    left: 57%;
+}
+.px12 {
+    padding: 5px 20px 5px 20px;
+    font-size: 12px;
+}
+.px12:hover {
+    background-color: lightgray;
+}
+.px14 {
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+}
+.px14:hover {
+    background-color: lightgray;
+}
+.px16 {
+    padding: 5px 20px 5px 20px;
+    font-size: 16px;
+}
+.px16:hover {
+    background-color: lightgray;
+}
+.px18 {
+    padding: 5px 20px 5px 20px;
+    font-size: 18px;
+}
+.px18:hover {
+    background-color: lightgray;
+}
+.px20 {
+    padding: 5px 20px 5px 20px;
+    font-size: 20px;
+}
+.px20:hover {
+    background-color: lightgray;
+}
+.px22 {
+    padding: 5px 20px 5px 20px;
+    font-size: 22px;
+}
+.px22:hover {
+    background-color: lightgray;
+}
+.px25 {
+    padding: 5px 20px 5px 20px;
+    font-size: 25px;
+}
+.px25:hover {
+    background-color: lightgray;
+}
+.px30 {
+    padding: 5px 20px 5px 20px;
+    font-size: 30px;
+}
+.px30:hover {
+    background-color: lightgray;
+}
+
+.shadowBlockColorText, .shadowBlockColorBack, .shadowSingIn,
+.shadowCreateTable, .shadowCreateOl, .shadowCreateUl,
+.shadowlogOut {
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.shadowlogOut {
+    align-items: center;
+}
+.shadowBlockColorText:active, .shadowBlockColorBack:active, 
+.shadowSingIn:active, .shadowCreateTable:active, .shadowCreateOl:active,
+.shadowCreateUl:active, .shadowlogOut:active {
+    display: flex;
+}
+.blockColorText, .blockColorBack, .SingIn,
+.CreateTable, .CreateOl, .CreateUl, .logOut {
+    width: 40%;
+    background-color: white;
+    border-radius: 5px;
+    height: max-content;
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    margin: 0 auto;
+}
+@keyframes move {
+    0% {
+        margin-top: -400px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 60px;
+    }
+}
+.logOut {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.CreateTable {
+    width: 60%;
+}
+form[name="f8"], form[name="f9"], form[name="f7"], 
+form[name="f6"], .logOut, form[name="f10"] {
+    padding: 20px 15px;
+}
+form[name="f8"] {
+    display: flex;
+}
+.styleColorbr, .btnOl, .btnUl, form[name="f7"] {
+    display: flex;
+    justify-content: space-between;
+}
+.pTbl {
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 20px;
+}
+.x, .x2, .x3, .x4, .x5 {
+    color: grey;
+    font-size: 16px;
+}
+.x:hover, .x2:hover, .x3:hover, .x4:hover, .x5:hover {
+    color: black;
+}
+.chooseColorText, .chooseColorBack, .chooseCreateTable, 
+.chooseCreateOl, .chooseCreateUl {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+.boxColorText, .boxColorBack {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 15px;
+}
+.colorT, .colorB {
+    width: 12%;
+    height: 60px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.color1 {
+    background-color: LightSeaGreen;
+}
+.color2 {
+    background-color: Teal;
+}
+.color3 {
+    background-color: LightGreen;
+}
+.color4 {
+    background-color: MediumSeaGreen;
+}
+.color5 {
+    background-color: DodgerBlue;
+}
+.color6 {
+    background-color: RoyalBlue;
+}
+.color7 {
+    background-color: MediumOrchid;
+}
+.color8 {
+    background-color: DarkOrchid;
+}
+.color9 {
+    background-color: DarkSlateGrey;
+}
+.color10 {
+    background-color: darkslategrey;
+}
+.color11 {
+    background-color: gold;
+}
+.color12 {
+    background-color: orange;
+}
+.color13 {
+    background-color: SandyBrown;
+}
+.color14 {
+    background-color: Chocolate;
+}
+.color15 {
+    background-color: Coral;
+}
+.color16 {
+    background-color: Sienna;
+}
+.color17 {
+    background-color: WhiteSmoke;
+}
+.color18 {
+    background-color: LightGrey;
+}
+.color19 {
+    background-color: Grey;
+}
+.color20 {
+    background-color: DimGrey;
+}
+.color21 {
+    background-color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: left;
+}
+.btn {
+    width: 15%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    font-size: 16px;
+    color: DodgerBlue;
+}
+.colors {
+    color: DimGrey;
+}
+.images, .files {
+    border: none;
+}
+
+
+.boxImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    display: none;
+}
+.img {
+    margin-bottom: 10px;
+    width: 27%;
+    height: 70px;
+    border-radius: 5px;
+}
+.img1 {
+    background: url(img/img1.jpg);
+    background-size: cover;
+    margin-right: 20px;
+}
+.img2 {
+    background: url(img/img2.jpg);
+    background-size: cover;
+    margin-right: 20px;
+}
+.img3 {
+    background: url(img/img3.jpg);
+    background-size: cover;
+}
+.img4 {
+    background: url(img/img4.jpg);
+    background-size: cover;
+    margin-right: 20px;
+}
+.img5 {
+    background: url(img/img5.jpg);
+    background-size: cover;
+    margin-right: 20px;
+}
+.img6 {
+    background: url(img/img6.jpg);
+    background-size: cover;
+}
+.img7 {
+    background: url(img/img7.jpg);
+    background-size: cover;
+    margin-right: 20px;
+}
+.img8 {
+    background: url(img/img8.jpg);
+    background-size: cover;
+    margin-right: 20px;
+}
+.img9 {
+    background: url(img/img9.jpg);
+    background-size: cover;
+}
+
+.boxImagesFiles {
+    padding: 15px;
+    display: none;
+}
+form [name="f5"] {
+    width: 100%;
+}
+input[name="browse"], input[name="btnBrowse"] {
+    width: 80%;
+    height: 35px;
+    font-size: 15px;
+    color: dimgray;
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.678);
+    border-radius: 4px;
+}
+input[name="btnBrowse"] {
+    width: 15%;
+    background-color: lightgray;
+    margin-left: -7px;
+}
+
+h3 {
+    padding: 20px;
+    text-align: center;
+}
+.inputSingIn{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.678);
+}
+input[name="sbmSingUp"] {
+    background-color: Grey;
+    color: white;
+    padding-left: 0;
+}
+input[name="sbmSingUp"]:hover {
+    background-color: dimgray;
+}
+
+.reset, .create {
+    width: 50%;
+}
+
+.inputTable, .selectTable, select[name="typeMarkOl"],
+input[name="liIteamOl"], select[name="typeMarkUl"],
+input[name="liIteamUl"] {
+    width: 97%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.678);
+}
+.selectTable {
+    width: 94%;
+}
+.mo {
+    width: 50%;
+}
+input[name="btnReset"], input[name="resetOl"], input[name="resetUl"],
+.signOut {
+    background-color: rgb(235, 64, 64);
+    color: white;
+    border: 1px solid rgb(235, 64, 64);
+}
+input[name="btnTable"], input[name="createListOl"], input[name="createListUl"] {
+    background-color: rgb(42, 167, 73);
+    color: white;
+    border: 1px solid rgb(42, 167, 73);
+}
+input[name="btnReset"]:hover {
+    background-color: rgb(230, 46, 46);
+}
+input[name="btnTable"]:hover {
+    background-color: rgb(17, 143, 48);
+}
+
+input[name="liIteamOl"], select[name="typeMarkOl"],
+input[name="liIteamUl"], select[name="typeMarkUl"] {
+    width: 100%;
+}
+input[name="resetOl"], input[name="createListOl"], 
+input[name="resetUl"], input[name="createListUl"] {
+    width: 49%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.cancel, .signOut {
+    width: 47%;
+    height: 35px;
+    border-radius: 3px;
+    color: white;
+}
+.cancel {
+    background-color: rgb(47, 47, 51);
+    border: 1px solid rgb(47, 47, 51);
+}
+.cancel:hover {
+    background-color: rgb(34, 34, 36);
+}
+.signOut:hover {
+    background-color: rgb(212, 59, 59);
+}
+
+.value {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: red;
+    font-size: 14px;
+    font-weight: normal;
+    display: none;
+}
+.emptyTable, .emptyOl, .emptyUl {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
